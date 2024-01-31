@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <img src="./images/left-img.png" alt="" />
+      </div>
+      <div class="right-container">
+        <h1>Get Started</h1>
+        <p>Already have an account?<a href="#">LogIn</a></p>
+        <div class="btns">
+          <button>Sign up</button>
+          <button>Sign up</button>
+        </div>
+        <p>Or</p>
+        <form action="" class="form">
+          <div class="inputForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <p id="errorName" class="errorMsgs"></p>
+          <div class="inputForm">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+          <p id="errorEmail" class="errorMsgs"></p>
+          <div class="inputForm">
+            <label for="password" >Password</label>
+            <input type="password" id="password" />
+          </div>
+          <p id="passwordCapital" class="errorMsgs">It should contain a capital letter</p>
+          <p id="passwordNumber" class="errorMsgs">It should contain a numbers</p>
+          <p id="passwordSpecial" class="errorMsgs">It should contain a special characters</p>
+          <p id="passwordLength" class="errorMsgs">Minimum length should be 6</p>
+        </form>
+        <button>Submit</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
